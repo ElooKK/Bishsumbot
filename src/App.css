@@ -1,0 +1,112 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  background:#0b1020;
+  color:white;
+}
+
+.app{
+  max-width:1200px;
+  margin:auto;
+}
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px;
+}
+
+.navbar nav{
+  display:flex;
+  gap:20px;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  min-height:70vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+  padding:40px 20px;
+}
+
+.hero h1{
+  font-size:56px;
+  margin:20px 0;
+}
+
+.hero p{
+  color:#cfd5e0;
+}
+
+button{
+  margin-top:20px;
+  padding:14px 25px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.badge{
+  background:#1f2937;
+  padding:8px 14px;
+  border-radius:20px;
+}
+
+.card{
+  background:#121933;
+  padding:25px;
+  border-radius:20px;
+}
+
+.chat{
+  margin-top:15px;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+section{
+  padding:60px 20px;
+}
+
+.grid{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.feature,
+.command{
+  background:#121933;
+  padding:25px;
+  border-radius:16px;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:#aaa;
+}
+
+@media(max-width:900px){
+  .hero{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+}
